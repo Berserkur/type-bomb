@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import randomWords from "random-words";
+import Canvas from "./Canvas";
 var wordCountVar = 0;
 var secondsCounter = 0;
 var displaySeconds = 0;
@@ -77,6 +78,7 @@ function App(props) {
 
   return (
     <div className="container">
+      <Canvas />
       {toggle ? (
         <p>
           {minutes}:{seconds}
